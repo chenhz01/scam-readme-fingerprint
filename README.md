@@ -4,6 +4,8 @@ A defensive static auditor that fingerprints malicious READMEs — the "README-a
 
 **Confidence: High (85%)** that the three-family model catches the batch-produced scam README template pattern; **Medium (60%)** that the default SEO threshold suits your corpus — tune `--seo-threshold` per batch [estimated].
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 A growing batch-abuse pattern (documented in 2026 campaign observations, as of 2026-10-11) clones the identity of legitimate desktop tools, fills the README with SEO Q&A bait aimed at both search engines and LLM retrieval, then instructs users to pipe a remote `Loader.ps1` into `iex` — and pre-answers "antivirus flagged it?" with instructions to disable protection. Human reviewers scanning dozens of these miss the one changed URL. The detection is mechanical: the templates reuse the same three structural ingredients.
